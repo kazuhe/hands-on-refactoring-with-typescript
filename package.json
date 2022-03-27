@@ -1,0 +1,33 @@
+{
+  "name": "hands-on-refactoring-with-typescript",
+  "version": "1.0.0",
+  "description": "Hands-on refactoring with typescript 🦌",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuhe/hands-on-refactoring-with-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazuhe/hands-on-refactoring-with-typescript/issues"
+  },
+  "homepage": "https://github.com/kazuhe/hands-on-refactoring-with-typescript#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "fp-ts": "^2.11.9"
+  }
+}
