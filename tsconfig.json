@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "umd", 
+    "module": "umd",
     "moduleResolution": "node",
     "baseUrl": "./",
     "types": [
       "node",
       "jest"
     ],
-    "sourceMap": true,
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
