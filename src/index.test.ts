@@ -5,10 +5,7 @@ describe("toPascalCase", () => {
     ["foo", "Foo"],
     ["Bar", "Bar"],
     ["baz qux", "BazQux"],
-  ])(
-    "text が %p の時、%p となること",
-    (text: string, result: string) => {
-      expect(toPascalCase(text)).toBe(result);
-    }
-  );
+  ])("text が %p の時、%p となること", (text: string, result: string) => {
+    expect(toPascalCase(text)).toBe(result);
+  });
 });

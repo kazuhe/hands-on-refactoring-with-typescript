@@ -9,14 +9,29 @@ export const toPascalCase = (text: string): string => {
     .join("");
 };
 
+/**
+ * 要素を取得する
+ */
+const getElement = (selector: string): HTMLElement | null =>
+  document.querySelector(selector);
+
+/**
+ * テキストを挿入する
+ */
+const insertText =
+  (element: HTMLElement) =>
+  (text: string): string => {
+    const p = document.createElement("p");
+    p.textContent = text;
+    element.appendChild(p);
+    return text;
+  };
+
 document.addEventListener("DOMContentLoaded", () => {
-  const LIST = ["foo", "bar", "Baz", "qux", "piyo piyo"];
-  const container = document.querySelector("#container");
+  const container = getElement("#container");
   if (container !== null) {
-    for (let i = 0; i < LIST.length; i++) {
-      const p = document.createElement("p");
-      p.textContent = toPascalCase(LIST[i]);
-      container.appendChild(p);
-    }
+    ["foo", "bar", "Baz", "qux", "piyo piyo"]
+      .map(toPascalCase)
+      .map(insertText(container));
   }
 });
